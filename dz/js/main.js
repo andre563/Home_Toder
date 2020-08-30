@@ -14,7 +14,7 @@ class CheckMul {
 		let div = document.createElement('div') // Створюєм елемен "div"
 		this.divId = div //Записуєм адерес "div" в "this.divId"
 		container.appendChild(div) //Вставляєм елемент "div" в "container"
-		//----------------------------------------------------
+		//---------------------------------------------------
 
 		//Створюєм кнопку для генерування прикладів і виводу їх на екран
 		div = document.createElement('div')//Перезаписуєм змінну "div" адресом нового елемента "div"
