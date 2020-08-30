@@ -54,7 +54,7 @@ class CheckMul {
 		div.appendChild(btn)
 		//----------------------------------------------------
 
-		// Создаєм і вставляєм пустий div для виводу речення "Ви правинильно відповіли ${this.numberCorrect} р. і неправильно ${this.numberIncorrect} р." . Також зберігаєм його адресу в "this.messageDiv"
+		// Создаєм і вставляєм пустий div. Також зберігаєм його адресу в "this.messageDiv"
 		container.appendChild(div)
 		this.messageDiv = document.createElement('div')
 		container.appendChild(this.messageDiv)
@@ -113,7 +113,7 @@ class OrderPrice {
 		container.appendChild(div)
 		//----------------------------------------------------
 
-		// Создаєм і вставляєм пустий div для виводу речення "Ви правинильно відповіли ${this.numberCorrect} р. і неправильно ${this.numberIncorrect} р." . Також зберігаєм його адресу в "this.messageDiv"
+		// Создаєм і вставляєм пустий div. Також зберігаєм його адресу в "this.messageDiv"
 		container.appendChild(div)
 		this.messageDiv = document.createElement('div')
 		container.appendChild(this.messageDiv)
@@ -181,7 +181,7 @@ class RandomBaner {
 		container.appendChild(div)
 		//----------------------------------------------------
 
-		// Создаєм і вставляєм пустий div для виводу речення "Ви правинильно відповіли ${this.numberCorrect} р. і неправильно ${this.numberIncorrect} р." . Також зберігаєм його адресу в "this.messageDiv"
+		// Создаєм і вставляєм пустий "div". Також зберігаєм його адресу в "this.messageDiv"
 		this.messageDiv = document.createElement('div')
 		container.appendChild(this.messageDiv)
 		//----------------------------------------------------
