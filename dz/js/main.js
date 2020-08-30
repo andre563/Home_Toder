@@ -10,26 +10,26 @@ class CheckMul {
 	render(containerId) { //Функція створення розмітки на сторінці
 		const container = document.getElementById(containerId) //Зберігаємо адрес контейнера в констані "const"
 		container.textContent = '' // Чистимо контейнер
-		// Создаєм і вставляєм пустий div для запису прикладів. Також зберігаєм його адресу в "this.divId"
-		let div = document.createElement('div') // Создаєм елемен "div"
+		// Створюєм і вставляєм пустий div для запису прикладів. Також зберігаєм його адресу в "this.divId"
+		let div = document.createElement('div') // Створюєм елемен "div"
 		this.divId = div //Записуєм адерес "div" в "this.divId"
 		container.appendChild(div) //Вставляєм елемент "div" в "container"
 		//----------------------------------------------------
 
-		//Создаєм кнопку для генерування прикладів і виводу їх на екран
+		//Створюєм кнопку для генерування прикладів і виводу їх на екран
 		div = document.createElement('div')//Перезаписуєм змінну "div" адресом нового елемента "div"
-		let btn = document.createElement('button') // Создаєм елемент "button" і записуєм його адрес в змінну "btn"
+		let btn = document.createElement('button') // Створюєм елемент "button" і записуєм його адрес в змінну "btn"
 		btn.innerText = "Згенерувати приклад" // Вставляєм текст в "button"
 		btn.onclick = this.printRandomExample.bind(this) // Підключаєм функцію на подію "onclick"
 		div.appendChild(btn) //Вставляєм елемент "button" в "div"
 		container.appendChild(div)//Вставляєм елемент "div" в "container"
 		//----------------------------------------------------
 
-		//Создаєм інпут для запису відповідей користувача
+		//Створюєм інпут для запису відповідей користувача
 		div = document.createElement('div') //Перезаписуєм змінну "div" адресом нового елемента "div"
-		let label = document.createElement('label')// Создаєм елемент "label" і записуєм його адрес в змінну "label"
+		let label = document.createElement('label')// Створюєм елемент "label" і записуєм його адрес в змінну "label"
 		label.innerText = 'Ваша відповідь'// Вставляєм текст в "label"
-		const input = document.createElement('input')// Создаєм елемент "input" і записуєм його адрес в змінну "input"
+		const input = document.createElement('input')// Створюєм елемент "input" і записуєм його адрес в змінну "input"
 		input.setAttribute('type', 'number')// Міняєм значення атрибуту "type" на "number"
 		label.appendChild(input)//Вставляєм елемент "input" в "label"
 		this.numberInput = input //Зберегли адрес елемента "input" в змінній "this.numberInput"
@@ -37,7 +37,7 @@ class CheckMul {
 		container.appendChild(div)//Вставляєм елемент "div" в "container"
 		//----------------------------------------------------
 
-		//Создаєм кнопку для перевірки відповіді
+		//Створюєм кнопку для перевірки відповіді
 		div = document.createElement('div')
 		btn = document.createElement('button')
 		btn.innerText = "Перевірити"
@@ -46,7 +46,7 @@ class CheckMul {
 		container.appendChild(div)
 		//----------------------------------------------------
 
-		//Создаєм кнопку для перевірки кількості правильних іне правильних відповідей
+		//Створюєм кнопку для перевірки кількості правильних іне правильних відповідей
 		div = document.createElement('div')
 		btn = document.createElement('button')
 		btn.innerText = "Вивести результат"
@@ -54,7 +54,7 @@ class CheckMul {
 		div.appendChild(btn)
 		//----------------------------------------------------
 
-		// Создаєм і вставляєм пустий div. Також зберігаєм його адресу в "this.messageDiv"
+		// Створюєм і вставляєм пустий div. Також зберігаєм його адресу в "this.messageDiv"
 		container.appendChild(div)
 		this.messageDiv = document.createElement('div')
 		container.appendChild(this.messageDiv)
@@ -92,7 +92,7 @@ class OrderPrice {
 	render(containerId) {
 		const container = document.getElementById(containerId)
 		container.textContent = ''
-		//Создаєм інпут для запису кількості днів
+		//Створюєм інпут для запису кількості днів
 		let div = document.createElement('div')
 		let label = document.createElement('label')
 		label.innerText = 'Введіть кількість днів'
@@ -104,7 +104,7 @@ class OrderPrice {
 		container.appendChild(div)
 		//----------------------------------------------------
 
-		//Создаєм кнопку для розрахунку суми
+		//Створюєм кнопку для розрахунку суми
 		div = document.createElement('div')
 		let btn = document.createElement('button')
 		btn.innerText = "Розрахувати суму"
@@ -113,7 +113,7 @@ class OrderPrice {
 		container.appendChild(div)
 		//----------------------------------------------------
 
-		// Создаєм і вставляєм пустий div. Також зберігаєм його адресу в "this.messageDiv"
+		// Створюєм і вставляєм пустий div. Також зберігаєм його адресу в "this.messageDiv"
 		container.appendChild(div)
 		this.messageDiv = document.createElement('div')
 		container.appendChild(this.messageDiv)
@@ -142,7 +142,7 @@ class RandomBaner {
 	render(containerId) {
 		const container = document.getElementById(containerId)
 		container.textContent = ''
-		//Создаєм інпут для запису кількості днів
+		//Створюєм інпут для запису кількості днів
 		let div = document.createElement('div')
 		let label = document.createElement('label')
 		label.innerText = 'Введіть URL сайта'
@@ -153,7 +153,7 @@ class RandomBaner {
 		container.appendChild(div)
 		//----------------------------------------------------
 
-		//Создаєм інпут для запису кількості днів
+		//Створюєм інпут для запису кількості днів
 		div = document.createElement('div')
 		label = document.createElement('label')
 		label.innerText = 'Введіть URL картинки'
@@ -164,7 +164,7 @@ class RandomBaner {
 		container.appendChild(div)
 		//----------------------------------------------------
 
-		//Создаєм кнопку для розрахунку суми
+		//Створюєм кнопку для розрахунку суми
 		div = document.createElement('div')
 		let btn = document.createElement('button')
 		btn.innerText = "Зберегти Банер"
@@ -172,7 +172,7 @@ class RandomBaner {
 		div.appendChild(btn)
 		container.appendChild(div)
 		//----------------------------------------------------
-		//Создаєм кнопку для розрахунку суми
+		//Створюєм кнопку для розрахунку суми
 		div = document.createElement('div')
 		btn = document.createElement('button')
 		btn.innerText = "Вивести банер"
@@ -181,7 +181,7 @@ class RandomBaner {
 		container.appendChild(div)
 		//----------------------------------------------------
 
-		// Создаєм і вставляєм пустий "div". Також зберігаєм його адресу в "this.messageDiv"
+		// Створюєм і вставляєм пустий "div". Також зберігаєм його адресу в "this.messageDiv"
 		this.messageDiv = document.createElement('div')
 		container.appendChild(this.messageDiv)
 		//----------------------------------------------------
